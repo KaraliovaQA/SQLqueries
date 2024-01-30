@@ -40,5 +40,9 @@
 14. Use the IN operator to select all the records where Country is either "Norway" or "France".
 ![image](https://github.com/KaraliovaQA/SQLqueries/assets/100686591/ac526f4b-ff48-4f9e-acf9-7ec173e9a5e9)
 
+15. Select all records from the City of “Bern”, "Berlin", "London" where IDs are greater than 10, but less than 30
 
-
+SELECT * 
+FROM Customers
+WHERE City IN ('Bern', 'Berlin', 'London' )
+AND (CustomerID > 10 AND CustomerID <30);
